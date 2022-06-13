@@ -1,6 +1,6 @@
 package com.example.testproject.di
 
-import com.example.testproject.AppLinks
+import com.example.testproject.constans.AppLinks
 import com.example.testproject.network.RestApiService
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory

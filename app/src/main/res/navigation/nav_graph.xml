@@ -17,8 +17,6 @@
         android:id="@+id/aboutClientFragment"
         android:name="com.example.testproject.ui.fragments.AboutClientFragment"
         android:label="AboutClientFragment">
-        <action
-            android:id="@+id/action_aboutClientFragment_to_authorizationFragment"
-            app:destination="@id/authorizationFragment" />
+
     </fragment>
 </navigation>

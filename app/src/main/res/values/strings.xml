@@ -10,4 +10,6 @@
     <string name="continue_btn">Continue</string>
     <string name="sing_in">Sing in</string>
     <string name="profile">Profile</string>
+    <string name="error_message">Something went wrong. Check the entered data</string>
+    <string name="error_input_message">Enter correct data</string>
 </resources>

@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.testproject.db.dao.ClientDao
-import com.example.testproject.db.entity.UserModel
+import com.example.testproject.entity.UserModel
 
 @Database(
     entities = [UserModel::class],

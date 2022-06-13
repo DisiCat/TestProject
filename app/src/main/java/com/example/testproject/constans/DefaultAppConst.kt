@@ -1,4 +1,5 @@
 package com.example.testproject.constans
 
-object DefaultAppConstans {
+object DefaultAppConst {
+    const val COUNTRY_CODE = "+380"
 }

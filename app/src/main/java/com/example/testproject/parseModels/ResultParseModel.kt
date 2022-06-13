@@ -1,6 +1,5 @@
 package com.example.testproject.parseModels
 
-import com.google.gson.annotations.SerializedName
 import com.squareup.moshi.Json
 
 data class ResultParseModel(

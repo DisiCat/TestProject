@@ -1,4 +1,7 @@
 package com.example.testproject.enums
 
-enum class EREsultType {
+enum class EResultType {
+    LOADING,
+    ERROR,
+    SUCCESS;
 }

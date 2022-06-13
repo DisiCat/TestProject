@@ -1,7 +1,8 @@
 package com.example.testproject.requesters
 
 import com.example.testproject.network.RestApiService
-import okhttp3.MediaType
+import com.example.testproject.parseModels.ResultParseModel
+import kotlinx.coroutines.coroutineScope
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
@@ -16,7 +17,7 @@ class AuthRequester @Inject constructor(
         country_code: String,
         phone: String,
         pass: String
-    ) {
+    ): retrofit2.Response<ResultParseModel> = coroutineScope {
         val jObj = JSONObject()
         jObj.put("phone_code", country_code)
         jObj.put("phone_number", phone)
@@ -24,11 +25,7 @@ class AuthRequester @Inject constructor(
         val mediaType = "application/json; charset=utf-8".toMediaType()
 
         val body: RequestBody = jObj.toString().toRequestBody(mediaType)
-        val requst = restApiService.getUserData(body)
 
-        var tedt = requst.body()
-
-        var test = tedt
-
+        return@coroutineScope restApiService.getUserData(body)
     }
 }

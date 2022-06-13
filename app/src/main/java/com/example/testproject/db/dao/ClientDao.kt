@@ -4,7 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.testproject.db.entity.UserModel
+import com.example.testproject.entity.UserModel
 
 @Dao
 interface ClientDao {
@@ -13,5 +13,5 @@ interface ClientDao {
     suspend fun insert(client: UserModel)
 
     @Query("SELECT * FROM userData WHERE id = :clientId")
-    suspend fun getClientById(clientId: String)
+    suspend fun getClientById(clientId: Int): UserModel
 }
