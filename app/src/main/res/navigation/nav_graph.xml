@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authorizationFragment">
+
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.example.testproject.ui.fragments.AuthorizationFragment"
+        android:label="AuthorizationFragment">
+        <action
+            android:id="@+id/action_authorizationFragment_to_aboutClientFragment"
+            app:destination="@id/aboutClientFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutClientFragment"
+        android:name="com.example.testproject.ui.fragments.AboutClientFragment"
+        android:label="AboutClientFragment">
+        <action
+            android:id="@+id/action_aboutClientFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment" />
+    </fragment>
+</navigation>
